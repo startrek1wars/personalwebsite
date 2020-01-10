@@ -1,0 +1,585 @@
+/*General CSS begins here*/
+
+html {
+	overflow-y:scroll; /*Forces a scroll bar so that pages do not shift when switching from one to the other*/
+}
+
+body {
+	background-color:#A8A8A8; /*This is a gray background color behind the webpage*/
+	margin:0px;
+}
+
+a img { /*CSS for all images that are links, making them consistantly without a blue border in all browsers. IE has a standard blue border around images that are links*/
+	border:none;
+}
+
+.clearfloat { /*General clearfloat div*/
+	clear:both;
+}
+
+.centered {
+	text-align:center;
+}
+
+.smallfont {
+	font-size:14px;
+}
+
+.top {
+	position:relative;
+	height:25px;
+	width:90px;
+	text-align:center;
+	padding-top:5px;
+	background-color:#2F6BDE;
+	font-size:15px;
+	border:1px solid #2066E8;
+	border-radius:5px;
+	margin:0px;
+}
+
+
+.top:hover {
+	position:relative; 
+	height:25px;
+	width:90px;
+	text-align:center;
+	padding-top:5px;
+	background-color:#2066E8;
+	border-radius:5px;
+	font-size:15px;
+	border:1px solid #0C59EB;
+	margin:0px;
+}
+
+.top:active {
+	position:relative; /*Position allows for the link to contained in the div*/
+	height:25px;
+	width:90px;
+	text-align:center;
+	padding-top:5px;
+	background-color:#EBAB34;
+	border-radius:5px;
+	font-size:15px;
+	border:1px solid #0C59EB;
+	margin:0px;
+}
+
+.top a {
+    position: absolute; /*Position is exactly where I want it to be-in the center of the div, filling up the whole div*/
+    width: 100%;
+    height: 100%;
+	left:0;
+    z-index: 10; /* Places the link above everything else in the div */
+}
+
+hr {
+	height:0px;
+	border:1px groove #000;
+	border-radius:3px;
+}
+
+.nomargin {
+	margin:0px;
+}
+
+
+.floatleft {
+	float:left;
+}
+
+/*General CSS ends here*/
+
+
+/*CSS for Template begins here*/
+.container {
+	position:relative;
+	width:900px;
+	border:1px solid #000;
+	margin:0px auto 0px auto;
+	font: 17px "century gothic", "lucida sans", sans-serif; /*This is the sans-serif font-family for the body of the page*/
+	background-color:#4B7DDB; /*Background color (blue) for the body of the page*/
+}
+
+.header {
+	padding-left:20px;
+	width:878px;
+	height:160px;
+	background-image:url('../images/header.jpg'); /*Gradient, kinda big but great looking*/
+	background-repeat:no-repeat; /*No need for repeat*/
+	border:1px solid #000; /*Borders give the web page a clear, clean look*/
+}
+
+.douglas { /*This is the CSS for the link at the top of the page*/
+	position:relative;
+	width:379.5px; /*The size of the image is .75 that of the actual image, lending the user the ability to zoom in without sacrificing pixels*/
+	height:59.25px;
+	margin-top:40px;
+}
+
+.douglas a{ /*This is the CSS for the link at the top of the page*/
+    position: absolute; /*Position is exactly where I want it to be-in the center of the div, filling up the whole div*/
+    width: 100%;
+    height: 100%;
+    z-index: 10; /* Places the link above everything else in the div */
+}
+
+.nav {
+	width:100%;
+	float:left;
+	margin:0px 0px 3px 0px;
+	padding:0px;
+	list-style:none;
+}
+
+.nav li {
+	float:left;
+}
+
+.navigation { /*Navigation bar of the page*/
+	position:relative;
+	width:898x;
+	height:45px;
+	border:1px solid #000;
+	background-color:#E39400; /*Orange background, same as the footer. Complementary with the body*/
+	font:17px tahoma, "trebuchet ms", sans-serif; /*Sans-serif fonts for the navigation, very easy to read*/
+}
+
+.navbutton {
+	height:30px; /*NO width to allow for text of varying length*/
+	margin:5px 0px 0px 10px; 
+	padding:5px 14px 0px 14px;
+	float:left;
+	border-radius:15px; /*Rounded Corners*/
+}
+
+.navbutton:hover {
+	height:30px;
+	margin:5px 0px 0px 10px; 
+	padding:5px 14px 0px 14px;
+	float:left;
+	border-radius:15px; /*Rounded Corners*/
+	background-color:#2D8BF7; /*When moused over, the div (link) changes color to blue*/
+}
+
+
+
+
+
+.blacklink { /*Makes the links in the navagation bar not underlined, not blue*/ 
+	color:black;
+	text-decoration:none;
+	border-style:none;
+}
+
+.blacklink2 { /*Makes the links in the navagation bar not underlined, not blue*/ 
+	color:black;
+	text-decoration:none;
+}
+
+
+
+.body { /*Div for the body of the website*/
+	width:858px;
+	padding:20px;
+	border:1px solid #000;
+}
+
+
+.footer {
+	height:50px; /*There is a small compatiblity error in that in IE(internet explorer), the header text is right against the top of the border. In Chrome, the text is centered vertically.*/
+	width:898px;
+	color:#4D4D4D; /*Text is lighter ans smaller and doesn't attract attention*/
+	background-color:#E39400; /*Orange background color, same as navigation*/
+	font:12px tahoma, "trebuchet ms", sans-serif; /*Easy to read despite smallness*/
+	text-align:center;
+	border:1px solid #000;
+}
+/*CSS for Template ends here*/
+
+
+/*CSS for Home begins here*/
+.indexh1 {
+	width:300px;
+}
+
+.intro {
+	width:450px;
+	margin-right:40px;
+	border:none;
+	float:left;
+}
+.p {
+	float:left;
+	width:800px;
+}
+
+.indexpic1 {
+	width:300px;
+	height:308px;
+	float:left;
+	border:1px solid black;
+}
+
+.emphasize {
+	font: 600 18px "century gothic", "lucida sans", sans-serif;
+}
+
+/*CSS for Home ends here*/
+
+
+/*CSS for Hobbies begins here*/
+.hobbiespic1 {
+	width:276px;
+	height:258px;
+	position:absolute;
+	top:290px;
+	left:550px;
+	border:1px solid black;
+	margin-left:20px;
+}
+
+.hobbiesp1 {
+	float:left;
+	width:500px;
+}
+
+
+.hobbiespic2 {
+	margin-top:40px;
+	width:219px;
+	height:340.5;
+	border:1px solid black;
+}
+
+.hobbiespic2container {
+	float:right;
+	margin-right:40px;
+	
+}
+
+.hobbiespic3 {
+	width:280px;
+	height:197.1px;
+	border:1px solid black;
+}
+
+.hobbiespic3container {
+	float:left;
+	margin-left:35px;
+	margin-top:15px;
+}
+
+.hobbiesp2 {
+	float:left;
+	width:500px;
+}
+
+.hobbiesp3 {
+	float:left;
+}
+
+.hobbiespic4 {
+	border:1px solid black;
+	width:360px;
+	height:270px;
+	border:1px solid black;
+}
+
+.hobbiespic4container {
+	float:left;
+	margin-top:15px;
+}
+
+.hobbiesp4 {
+	float:left;
+	width:460px;
+	margin-right:20px;
+}
+
+.hobbiesp5 {
+	float:left;
+	width:460px;
+	margin-right:20px;
+}
+.hobbiespic5 {
+	border:1px solid black;
+	width:350px;
+	height:233px;
+	border:1px solid black;
+}
+
+.hobbiespic5container {
+	float:left;
+	margin-top:15px;
+}
+
+iframe {
+	border:1px solid black;
+}
+/*CSS for Hobbies ends here*/
+
+
+/*CSS for School begins here*/
+
+.schoolp1 {
+	float:left;
+	width:500px;
+	margin-right:20px;
+}
+.schoolpic1 {
+	border:1px solid black;
+	width:262px;
+	height:204px;
+	border:1px solid black;
+}
+
+.schoolpic1container {
+	position:absolute;
+	left:560px;
+	top:280px;
+
+	margin-top:15px;
+}
+
+.schoolp2 {
+	float:left;
+	width:460px;
+	margin-right:30px;
+}
+.schoolpic2 {
+	border:1px solid black;
+	width:280px;
+	height:210px;
+	border:1px solid black;
+}
+
+.schoolpic2container {
+	float:left;
+	margin-top:15px;
+}
+
+
+/*CSS for School ends here*/
+
+
+/*CSS for Family begins here*/
+
+
+.table {
+	border-radius:10px;
+}
+	
+.favorites {
+	width:400px;
+	border:1px solid black;
+	border-spacing:0px;
+}
+
+td {
+	padding:10px;
+	border:1px solid black;
+}
+
+td:hover {
+	padding:10px;
+	background-color:#2F6BDE;
+	border:1px solid black;
+}
+
+th {
+	padding:10px;
+	border:1px solid black;
+	background-color:#E39400;
+}
+
+
+.familyp1 {
+	float:left;
+	width:460px;
+	margin-right:30px;
+}
+.familypic1 {
+	border:1px solid black;
+	width:310px;
+	height:230px;
+}
+
+.familypic1container {
+	position:absolute;
+	top:280px;
+	left:530px;
+	width:330px;
+	margin-top:15px;
+}
+
+.familyp2 {
+	width:500px;
+	float:left;
+	margin-right:20px;
+}
+.familypic2 {
+	width:269px;
+	height:359px;
+	border:1px solid black;
+}
+
+.familypic2container {
+	position:absolute;
+	top:650px;
+	left:530px;
+	width:330px;
+	float:left;
+	margin-top:15px;
+}
+
+.familyp3 {
+	float:left;
+	width:480px;
+	margin-right:20px;
+}
+.familypic3 {
+	width:320px;
+	height:240px;
+	border:1px solid black;
+}
+
+.familypic3container {
+	position:absolute;
+	left:530px;
+	width:330px;
+	float:left;
+	margin-top:15px;
+}
+
+.familyp4 {
+	float:left;
+	width:480px;
+	margin-right:20px;
+}
+.familypic4 {
+	width:320px;
+	height:240px;
+	border:1px solid black;
+}
+
+.familypic4container {
+	position:absolute;
+	left:530px;
+	top:1150px;
+	width:330px;
+	float:left;
+	margin-top:15px;
+}
+/*CSS for Family ends here*/
+
+/*CSS for Survey begins here*/
+.form1 {
+	border:2px solid #6E78FF;
+	background-color:#515CFC;
+	width:500px;
+	padding-top:10px;
+	margin:0px auto;
+}
+
+.label {
+	width:100px;
+	text-align:right;
+	float:left;
+	padding:5px;
+	margin-right:20px;
+}
+
+.data {
+	padding:5px;
+	text-align:left;
+}
+
+
+.tall {
+	height:60px;
+	padding-top:34px;
+}
+
+*:focus { /*When forms are clicked, no outline.*/
+	outline: none;
+}
+
+select {
+	width:170px;
+	border:1px solid black;
+	-webkit-appearance: none;
+	background: #FFF url('../images/dropdown.png') no-repeat;
+	background-position: 142px 2px;
+}
+
+select:active {
+	width:170px;
+	border:1px solid black;
+	-webkit-appearance: none;
+	background: #FFF url('../images/dropdownactive.png') no-repeat;
+	background-position: 142px 2px;
+}
+
+
+.textarea {
+	border:1px solid #000;
+	border-radius:14px;
+	padding:10px;
+	resize:none;
+
+}
+
+
+.field {
+	border:1px solid #000;
+	border-radius:14px; /*Doesn't work in internet explorer*/
+	padding-left:10px;
+	height:22px;
+}
+
+.select {
+	border:1px solid #000;
+	border-radius:14px; /*Doesn't work in internet explorer*/
+	padding-left:10px;
+	height:22px;
+}
+
+.textarea:required:valid, .field:required:valid { 
+    border-color: #28921f;
+	background: #fff url('../images/valid.png') no-repeat 98% center; /*Makes a background image of a checkmark when the input is filled out, even if the input is not clicked on*/
+    box-shadow: 0 0 5px #5cd053; /*Makes a shadow for the box */
+}
+
+.field:focus:invalid, .textarea:focus:invalid { 
+    border-color: #b03535;
+	background: #fff url('../images/invalid.png') no-repeat 98% center; /*Makes a background image of a red exclamation mark when clicked on and invalid*/ 
+	box-shadow: 0 /*Horizontal shadow position*/ 0 /*Vertical shadow position*/ 5px /*Blur distance*/  #d45252 /*color*/;
+	/*These functions don't work in internet explorer for some reason*/
+}
+
+
+.button {
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:15px;
+}
+
+.submit {
+	height:25px;
+	border-radius:5px;
+	background-color:#FFF;
+	border:none;
+	border:1px solid #000;
+}
+
+.submit:active {
+	height:25px;
+	border-radius:5px;
+	background-color:#DBDBDB;
+	border:1px solid #004078;
+}
+/*CSS for Survey ends here*/
+	
+
+

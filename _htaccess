@@ -1,0 +1,5 @@
+AuthName "fillpot"  
+AuthType Basic
+AuthUserFile /home2/mkhsintb/public_html/douglaschin/.htpasswd  
+Require valid-user
+

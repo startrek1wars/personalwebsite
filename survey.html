@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<title>Visitor Feedback | Douglas Chin</title>
+
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="author" content="Your Name Goes Here" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css" media="all">
+</style>
+<link rel="shortcut icon" type="image/icon-x" href="images/favicon.ico" /> <!--Favicon implementation-->
+<script type="text/javascript">
+function thanx(theForm) {
+   alert("Thank you for your feedback!");
+   theForm.submit();
+}
+</script>
+</head>
+
+<body>
+<a name="top"></a>
+<div class="container"><!--Overall web page, orange background on a grey background-->
+
+<div class="header">
+<div class="douglas"><a href="index.html"><img src="images/douglas-chin.png" width="379.5" height="59.25" alt="Douglas Chin" /></a></div><!--My name in a fancy font-one image, on a gradient header. It is a link to my home page in Mozilla and Firefox, but IE needs to right click and select go to link.-->
+<i>Student, science-fiction geek, and web page designer</i>
+</div>
+
+
+<div class="navigation">
+<ul class="nav">
+	<li><a class="blacklink navbutton" href="index.html">Home</a></li>
+	<li><a class="blacklink navbutton" href="hobbies.html">Hobbies</a></li>
+	<li><a class="blacklink navbutton" href="school.html">School</a></li>
+	<li><a class="blacklink navbutton" href="family.html">Family</a></li>
+	<li><a class="blacklink navbutton" href="survey.html">Feedback</a></li>
+</ul>	
+</div>
+
+<div class="body"><!--Main Web page body-->
+<h2 class="centered">Visitor Feedback</h2>
+
+<p class="centered">Do you have questions, complaints, or other comments about this website? <br />Please fill out this short form!</p>
+
+<div class="form1">
+<form action="mailto:douglassetochin@gmail.com" method="post">
+<div class="label">
+First Name:
+</div>
+
+<div class="data">
+<!--Text Box-->
+<input class="field" type="text" size="45" name="firstname" placeholder="First Name" required  pattern="[A-Z].+" title="Hint: Make sure your name has more than two letters and that the first letter is capitalized" />
+</div>
+<div class="clearfloat"></div>
+
+<div class="label">
+Last Name:
+</div>
+
+<div class="data">
+<!--Text Box-->
+<input class="field" type="text" size="45" name="lastname" placeholder="Last Name" required pattern="[A-Z].+" title="Hint: Make sure your name has more than two letters and that the first letter is capitalized" /> <!--There are many things here that don't validate. "required" makes the input field required (browser does not allow submission if the patter, which follows, is not inputted. The pattern requires a capital letter (no numbers) and at least one other letter before the form can be submitted. Placeholder text disappears when the user types something in. None of these functions are available in internet explorer. The title shows up when moused over, and when the bowser detects that the user made an error-->
+
+</div>
+<div class="clearfloat"></div>
+
+<div class="label tall">
+Rating:
+</div>
+
+<div class="data"><!--Radio Buttons (Only one can be selected) They are required-->
+<input type="radio" name="grade" value="a" required />A<br />
+<input type="radio" name="grade" value="b" required />B<br />
+<input type="radio" name="grade" value="c" required />C<br />
+<input type="radio" name="grade" value="d" required />D<br />
+<input type="radio" name="grade" value="f" required />F<br />
+</div>
+<div class="clearfloat"></div>
+
+<div class="label">
+Secret Word:
+</div>
+<div class="data"><!--Dropdown box-->
+<select class="select" name="secret-word" required>
+<option selected value="broncos">Broncos</option>
+<option value="lemon-meringue">Lemon Meringue</option>
+<option value="flaming-hot-cheetos">Flaming Hot Cheetos</option>
+<option value="jet-li">Jet Li</option>
+</select>
+</div>
+
+<div class="clearfloat"></div>
+
+
+<div class="label tall">
+Comments:
+</div>
+
+<div class="data"><!--Comment area-->
+<textarea placeholder="Enter your comments here." class="textarea" name="comments" rows="5" cols="35" title="Please add a comment." required>
+</textarea>
+</div>
+
+
+<div class="button"><!--Submit Button-->
+<input class="submit" type="submit" value="Click Here to Submit" onClick="thanx(this.form)" />
+</div>
+
+</form>
+</div>
+<br />
+<div class="top"><a href="#top" class="blacklink2">^Go to top</a></div><!--Back to top button. Changes darker when hover, orange when clicked-->
+</div>
+
+<div class="footer">
+<p>&copy; 2013-Douglas Chin<br />Best viewed in Google Chrome</p>
+</div>
+
+</div><!--Container end-->
+</body>
+
+</html>
